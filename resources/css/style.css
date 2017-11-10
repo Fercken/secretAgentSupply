@@ -135,7 +135,7 @@ nav .container {
 
 .location-content,
 .hours-content {
-  width: 35%
+  width: 35%;
 }
 
 .location-numbers,
@@ -160,12 +160,15 @@ footer {
   margin-top: 4rem;
 }
 
+
 /*** Media Queries ***/
 @media only screen and (max-width: 1600px) {
   .menu-display {
     display: none;
   }
 }
+
+
 @media only screen and (max-width: 1024px) {
   .container {
     width: 1024px;
@@ -184,13 +187,14 @@ footer {
     padding-left: 2rem;
     padding-bottom: 1.5rem;
   }
-    .container .content h1 {
+  
+  .container .content h1 {
     font-size: 2.3rem;
     font-weight: bold;
     padding-left: 2rem;
   }
   
-     nav {
+  nav {
     background-color: firebrick;
     display: flex;
     justify-content: center;
@@ -220,20 +224,93 @@ footer {
    display: none;
   }
   
+  .location-content,
+  .hours-content {
+    width: 47.8%;
+  }
   
+  .location-text h4,
+  .hours-text h4{
+    background-color: black;
+    padding: 1.5rem 3rem;
+  }
   
-  
+  .location-numbers,
+  .hours-numbers{
+    color: black;
+    padding-top: 1.5rem;
+  }
   
 
+@media only screen and (max-width: 470px) {
+  .logo-site .container{
+    background: black;
+    display: flex;
+    justify-content: center;
+    height: 3.5rem;
+    }
   
+  .container .content{
+    background-color: black;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+    top: 16.3rem;
+  }
   
+  .container .content h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 2rem;
+    padding-bottom: .7rem;
+  }
   
+  .container .content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 2rem;
+  }
   
+  .gallery .container {
+    display: flex;
+    justify-content: center;
+  }
   
-    
+  .product {
+    width: 90%;
+  }
   
-   
+  .watch {
+   display: none;
+  }
   
- 
+  .loc-hrs {
+    display: flex;
+  }
+  .loc-hrs .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .location-content,
+  .hours-content {
+    width: 91.5%;
+  }
+  
+  .location-numbers,
+  .hours-numbers{
+    color: black;
+    padding-top: .5rem;
+    padding-bottom: 1.5rem;    
+  }
+  
+  footer .container{
+    display: flex;
+    justify-content: center;
+  } 
 }
 
